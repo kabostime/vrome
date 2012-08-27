@@ -2,8 +2,8 @@
 " Note: sync with wiki
 
 " Change key mapping in normal mode, please check Vrome Features for available key mapping
-map  j 4j
-map  k 4k
+unmap  j
+unmap  k
 map  gT h
 map  gt l
 
