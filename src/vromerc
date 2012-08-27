@@ -2,11 +2,9 @@
 " Note: sync with wiki
 
 " Change key mapping in normal mode, please check Vrome Features for available key mapping
-map  j <C-f>
-map  j 10j
-
-" Remove key mapping in normal mode
-unmap <C-f>
+map  j 4j
+map  <C-n> h
+map  <C-p> l
 
 " Change key mapping in insert mode
 imap <M-h> <M-w>
@@ -41,10 +39,10 @@ set disablesites=mail.google.com, reader.google.com // don't run Vrome in those 
 set searchengines={"google":"http://www.google.com/search?q={{keyword}}", "yahoo":"http://search.yahoo.com/search?p={{keyword}}","wikipedia":"http://en.wikipedia.org/wiki/{{keyword}}","answers":"http://www.answers.com/main/ntquery?s={{keyword}}","yubnub":"http://yubnub.org/parser/parse?command={{keyword}}"}
 
 " You could also add some new searchengines without overwrite build in.
-set searchengines+={"baidu":"http://www.baidu.com/s?wd={{keyword}}"}
+set searchengines+={"alc":"http://www.baidu.com/s?wd={{keyword}}"}
 
 " Change default search engine, default is google.
-set defaultsearch=yahoo
+set defaultsearch=google
 
 " Disable autocomplete
 set noautocomplete
